@@ -1,0 +1,421 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   ctrl + F or command + F, START FROM HERE
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+@font-face {
+    font-family: "Helvetica Neue, Roman";
+    src: url("assets/fonts/helvetica-neue/HelveticaNeue-Roman.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Helvetica Neue, Thin";
+    src: url("assets/fonts/helvetica-neue/HelveticaNeue-Thin.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "Helvetica Neue, UltraLight";
+    src: url("assets/fonts/helvetica-neue/HelveticaNeueUltraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Helvetica Neue, Bold";
+    src: url("assets/fonts/helvetica-neue/HelveticaNeueBold.ttf") format("truetype");
+}
+
+/* START FROM HERE  */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overscroll-behavior-y: contain;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    height: 114px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header-1 {
+    background-color: rgb(0, 0, 0);
+}
+
+.header-2 {
+    flex: 2;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center; /* Menengahkan secara vertikal */
+    justify-content: space-between; /* Untuk memberikan ruang di kiri dan kanan */
+}
+
+.header-2-content {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    margin-left: 4%;
+    box-sizing: border-box;
+}
+
+.header-2-content-li {
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.header-2-content-li:hover {
+    text-decoration: underline;
+}
+
+.download-button:hover {
+    text-decoration: none;
+}
+
+.content-container {
+    height: 604px;
+    background-color: black;
+    color: white;
+    font-family: "Helvetica Neue, Roman", sans-serif;
+}
+
+.description {
+    margin-left: 10%;
+}
+
+.introduce-desc-text {
+    font-family: "Helvetica Neue, UltraLight", sans-serif;
+    font-size: 22px;
+}
+
+#say-my-name {
+    font-family: "Helvetica Neue, Bold";
+    font-size: 50px;
+}
+
+.profile {
+    margin-right: 10%;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.button-flat {
+    height: 42px;
+    font-size: 18px;
+    color: #000000;
+    background: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.button-flat:hover {
+    background: none;
+    color: white;
+}
+.logo-itk {
+    width: 153px;
+    height: 121px;
+    margin-left: 63px;
+}
+
+.fact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.header-fun-fact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    padding: 0 120px;
+}
+
+#fun-fact-1 {
+    font-family: "Helvetica Neue, Bold";
+    margin-bottom: 20px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+#fun-fact-2 {
+    font-family: "Helvetica Neue, Bold";
+    margin-bottom: 20px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+#fun-fact-3 {
+    font-family: "Helvetica Neue, Bold";
+    margin-bottom: 20px;
+    padding: 0 50px;
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background: #111;
+}
+footer .content {
+    max-width: 1350px;
+    margin: auto;
+    padding: 35px 63px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .content p,
+a {
+    color: #fff;
+}
+footer .content .box {
+    width: 33%;
+    transition: all 0.4s ease;
+}
+footer .content .topic {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 16px;
+    font-family: "Helvetica Neue, Bold";
+}
+footer .content p {
+    text-align: justify;
+}
+footer .content .lower .topic {
+    margin: 24px 0 5px 0;
+}
+footer .content .lower i {
+    padding-right: 16px;
+}
+footer .content .middle {
+    padding-left: 80px;
+}
+footer .content .middle a {
+    line-height: 32px;
+}
+footer .content .right input[type="text"] {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+}
+footer .content .right input[type="submit"] {
+    height: 42px;
+    width: 100%;
+    font-size: 18px;
+    color: #000000;
+    background: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 12px;
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover {
+    background: none;
+    color: white;
+}
+footer .content .media-icons a {
+    font-size: 16px;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    text-align: center;
+    line-height: 43px;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease;
+}
+.content .media-icons a:hover {
+    border-color: #eb2f06;
+}
+footer .bottom a {
+    color: #eb2f06;
+}
+footer a {
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1100px) {
+    footer .content .middle {
+        padding-left: 50px;
+    }
+}
+@media (max-width: 950px) {
+    footer .content .box {
+        width: 50%;
+    }
+    .content .right {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 560px) {
+    footer {
+        position: relative;
+    }
+    footer .content .box {
+        width: 100%;
+        margin-top: 30px;
+    }
+    footer .content .middle {
+        padding-left: 0;
+    }
+}
